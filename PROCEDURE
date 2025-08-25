@@ -1,0 +1,17 @@
+Download and install Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki
+pip install -r requirements.txt
+
+FILE-STRUCTURE
+your_project/
+├── kannada_ocr.py                 # OCR processing
+├── kannada_postprocessor.py       # Post-processing 
+├── gemini_kannada_refiner.py      # Gemini AI refinement
+├── integrated_pipeline.py         # Complete pipeline
+├── requirements.txt               # Dependencies
+└── your_pdf_files/               # Input PDFs
+
+INSTALL DEPENDENCIES=
+pip install google-generativeai opencv-python pytesseract pdf2image python-docx
+
+Run with this command -->  python test_setup.py
+                           python integrated_pipeline.py input.pdf output_base --api-key PLACE-API-KEY-HERE
